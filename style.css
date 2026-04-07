@@ -1,29 +1,28 @@
-/*Name this external file gallery.css*/
-body{
-		margin: 2%;
-		border: 1px solid black;
-		background-color: #b3b3b3;
-}
-#image{
-    line-height:650px;
-		width: 575px;
+#image {
+    line-height: 650px;
+    width: 575px;
     height: 650px;
-		border:5px solid black;
-		margin:0 auto;
+    border: 5px solid black;
+    margin: 0 auto 25px auto;
     background-color: #8e68ff;
     background-image: url('');
     background-repeat: no-repeat;
-    color:#FFFFFF;
+    background-size: cover;
+    color: #FFFFFF;
     text-align: center;
-    background-size: 100%;
-    margin-bottom:25px;
     font-size: 150%;
 }
-.preview{
-		width:10%;
-		margin-left:17%;
-    border: 10px solid black;
+
+.preview {
+    width: 14%; /* 调整宽度以容纳 6 张图 */
+    margin: 1%;
+    border: 5px solid black;
+    display: inline-block;
+    cursor: pointer;
 }
-img{
-		width:95%;
+
+/* 键盘无障碍访问的关键：当图片被 Tab 选中时显示高亮 */
+.preview:focus {
+    border-color: #ffeb3b; /* 选中的图片变黄边框 */
+    outline: none;
 }
