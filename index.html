@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>JS - Gallery Homework</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+    <meta charset="UTF-8">
+    <title>Interactive Photo Gallery - Accessibility Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+<body onload="addTabFocus()"> <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="preview-container">
+        <img class="preview" alt="Bacon near the fort" src="https://ansonlin8.github.io/SportsPark/images/bacon_near_the_fort.jpg" onmouseover="upDate(this)" onmouseleave="unDo()">
+        
+        <img class="preview" alt="Munising landscape" src="https://ansonlin8.github.io/SportsPark/images/munising.jpg" onmouseover="upDate(this)" onmouseleave="unDo()">
+        
+        <img class="preview" alt="Pink blossoms in bloom" src="https://ansonlin8.github.io/SportsPark/images/pink_blossoms.jpg" onmouseover="upDate(this)" onmouseleave="unDo()">
+        
+        <img class="preview" alt="Falling petals on the grass" src="https://ansonlin8.github.io/SportsPark/images/falling_petals.jpg" onmouseover="upDate(this)" onmouseleave="unDo()">
+        
+        <img class="preview" alt="Red maple leaves in autumn" src="https://ansonlin8.github.io/SportsPark/images/red_maple.jpg" onmouseover="upDate(this)" onmouseleave="unDo()">
+        
+        <img class="preview" alt="Bright colorful tulips" src="https://ansonlin8.github.io/SportsPark/images/tulips.jpg" onmouseover="upDate(this)" onmouseleave="unDo()">
+    </div>
 
 </body>
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
 </html>
